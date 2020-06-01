@@ -12,14 +12,6 @@ include 'data.php';
     </style>
   </head>
   <body>
-    <div id="header">
-      <div>
-        Welcome
-      </div>
-      <div>
-        <form>
-        </form>
-      </div>
-    </div>
+    <p id="demo"><p>
   </body>
 </html>
