@@ -11,6 +11,7 @@
     </style>
   </head>
   <body onload="getcases()">
+  <!-- a paragraph with an id "demo" to render data that we got out of cases.json-->
     <p id="demo"><p>
   </body>
 </html>
