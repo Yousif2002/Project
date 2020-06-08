@@ -1,36 +1,34 @@
 //this component will contain all the state data
 import React from 'react';
-import { Component } from "react";
-import Covid from '../everythingElse/cases';
 import data from "../everythingElse/cases";
-import {date, state, positive, negative} from "../everythingElse/cases";
+import Header from "./HeaderComponent";
+import Home from "./HomeComponent";
+import Safe from './Howtostaysafe';
+import { Switch, Route, Redirect } from "react-router-dom";
+import { Component } from "react";
+//Both presentation and container component
+//Could render and contain state data
+import Data from './DataComponent';
 import App from '../App.css';
 
-
-//Created a main component
-//this will only hold data and won't be rendering anything
-// this is optional but makes the project more organized, we could make another componen
 class Main extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            //state data
+        }
     }
 
     render() {
-        
-        return(
+        return (
+            //presentational data
             <>
-            <span className="positive">
-                {`Positive: ${positive}`} <br />
-            </span>
-            <span className="negative">
-                {`Negative: ${negative}`} <br />
-            </span>
-            <span className="state">
-                {`State: ${state}`} <br />
-            </span>
-            <span className="date">
-                {`Current date: ${date}`} <br />
-            </span>
+                <Header />
+                <Switch>
+                    <Route path="/home" component={Home} />
+                    <Route path="/stayingsafe" component={Safe} />
+                    <Route path="/data" component={Data} />
+                </Switch>
             </>
         );
     }
