@@ -1,7 +1,9 @@
 //this component will contain all the state data
 import React from 'react';
 import data from "../everythingElse/cases";
-import Header from "./HeaderComponent"
+import Header from "./HeaderComponent";
+import Home from "./HomeComponent";
+import Safe from './Howtostaysafe';
 import { Switch, Route, Redirect } from "react-router-dom";
 import { Component } from "react";
 //Both presentation and container component
@@ -22,7 +24,11 @@ class Main extends Component {
             //presentational data
             <>
                 <Header />
-                <Data />
+                <Switch>
+                    <Route path="/home" component={Home} />
+                    <Route path="/stayingsafe" component={Safe} />
+                    <Route path="/data" component={Data} />
+                </Switch>
             </>
         );
     }

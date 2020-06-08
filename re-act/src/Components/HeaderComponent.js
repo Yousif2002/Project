@@ -39,7 +39,7 @@ class Header extends Component {
             </Jumbotron>
             <Navbar dark sticky="top" expand="md">
             <div className="container">
-                <NavbarBrand className="mr-auto" href="/"><img src=""/></NavbarBrand>
+            <NavbarBrand className="mr-auto" href="/"><img src="" width="" height="" alt="Covid image"/></NavbarBrand>
                 <NavbarToggler onClick={this.toggleNav}/>
                 <Collapse isOpen={this.state.isNavOpen} navbar>
                     <Nav navbar>
@@ -49,18 +49,18 @@ class Header extends Component {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link" to="">
-                                <i className="fa fa-list fa-lg" /> nav
+                            <NavLink className="nav-link" to="/stayingsafe">
+                                <i className="fa fa-list fa-lg" /> Staying Safe
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/data">
+                                <i className="fa fa-info fa-lg"/> Data
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="">
-                                <i className="fa fa-info fa-lg"/> nav
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="nav-link" to="">
-                                <i className="fa fa-address-card fa-lg"/> nav
+                                <i className="fa fa-address-card fa-lg"/> MORE INFO ¯\_(ツ)_/¯
                             </NavLink>
                         </NavItem>
                     </Nav>
