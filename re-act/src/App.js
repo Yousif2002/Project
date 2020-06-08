@@ -1,11 +1,20 @@
-import React from 'react';
+//presentional component
+import React, { Component } from 'react';
 import Main from "./Components/MainComponent";
+import { BrowserRouter } from "react-router-dom";
 import './App.css';
 
-function App() {
-  return (
-      <Main />
-  );
+class App extends Component {
+
+    render() {
+        return (
+            <BrowserRouter>
+                <div className="App">
+                    <Main />
+                </div>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;
