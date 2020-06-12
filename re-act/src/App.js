@@ -1,6 +1,6 @@
 //presentional component
 import React, { Component } from 'react';
-import Main from "./Components/MainComponent";
+import Main from "./components/MainComponent";
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
 
