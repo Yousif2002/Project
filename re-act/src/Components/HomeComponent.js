@@ -6,7 +6,8 @@ import React from "react";
 function Home(props) {
     return (
         <>
-            <h1>INFO ON COVID HERE</h1>
+            <img src="https://cdn.pixabay.com/photo/2020/03/11/15/06/covid-19-4922384_960_720.jpg"/>
+            <h1 className="img-h1">What is covid-19?</h1>
         </>
     );
 }
