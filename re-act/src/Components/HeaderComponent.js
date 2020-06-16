@@ -54,7 +54,7 @@ class Header extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/data">
-                                <i className="fa fa-info fa-lg"/> Data
+                                <i className="fa fa-info fa-lg"/> Minnesota data
                             </NavLink>
                         </NavItem>
                         <NavItem>
