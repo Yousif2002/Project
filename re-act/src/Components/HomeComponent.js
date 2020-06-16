@@ -7,8 +7,6 @@ function Home(props) {
     return (
         <>
             <Example />
-            <div className="container">
-            </div>
         </>
     );
 }
